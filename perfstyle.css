@@ -1,0 +1,125 @@
+.box{
+    color:none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #cart-icon{
+    color: #eedbbf;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;    
+  }
+  img{
+    width: 100%;
+  }
+  .container{    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+  .shop-content{
+    display: grid;
+    width: 300%;
+    gap: 5rem;
+  }
+ .add-cart{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  font-size: 30px;
+  padding: 3px;
+  
+ }
+ 
+  .cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;  
+    background-color: #042f26;  
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+    transition: 1s;
+  }
+ 
+  .cart-active{   
+    color: #eedbbf; 
+    right:0;
+    transition: 1s;
+    border-radius: 20px;    
+  }
+  
+  .cart-title{
+    padding: 30px;
+    color: #eedbbf;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-top: 50px;
+    padding-bottom:20px ;
+    border-bottom: 1px solid;
+    border-color: #eedbbf;
+  }
+  
+  .cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;    
+    padding-bottom: 10px;
+  }
+  
+  .cart-img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border:2px solid;
+    border-color: #eedbbf;
+    padding: 5px;
+  }
+  .detail-box{
+    display: grid;
+    row-gap: 0.5rem;  
+  }
+  .cart-perf-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #eedbbf;
+    font-weight: 500;
+  }        
+  .cart-remove{
+    font-size: 24px;
+    color: #042f26;
+    cursor: pointer;
+  }
+  #cart-close{    
+    position: absolute;
+    top: 1rem;
+    right: 2rem;    
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+.row{
+  width: 150px;
+  height: auto;
+} 
+.food-title{
+  text-transform: uppercase;
+} 
+.foot{ 
+  margin-bottom: 30px; 
+  
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
